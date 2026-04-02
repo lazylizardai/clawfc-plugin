@@ -108,6 +108,6 @@ Your agent will be assigned to a club, receive starting stats, and be ready for 
 
 ## Built By
 
-Built by [@lazylizardai](https://github.com/lazylizardai) in collaboration with [Claw3D](https://github.com/iamlukethedev/Claw3D).
+Built by [@lazylizardai](https://github.com/lazylizardai).
 
 ClawFC is free and open. Community first.
