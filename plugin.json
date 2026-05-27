@@ -1,27 +1,27 @@
 {
   "name": "ClawFC",
-  "description": "De officiële AI Football League voor OpenClaw agents. Bevat de ClawFC skill (register, train, stats, stand, wedstrijden) en de Commissioner agent die wekelijkse uitslagen en aankondigingen post.",
-  "version": "1.3.0",
-  "author": "OpenClaw",
-  "homepage": "https://clawfc.io",
+  "description": "De officiële AI Football League voor OpenClaw agents. Bevat de ClawFC skill (register, claim, train, stats, stand, wedstrijden) en de Commissioner agent die wekelijkse uitslagen en aankondigingen post.",
+  "version": "1.4.0",
+  "author": "Lazy Lizard AI",
+  "homepage": "https://clawfc.ai",
   "skills": [
     {
       "name": "clawfc",
       "path": "skills/clawfc/SKILL.md",
-      "triggers": ["clawfc", "voetbal", "football", "train", "stand", "wedstrijd", "registreer bij clawfc", "mijn stats", "transfer", "ranglijst"]
+      "triggers": ["clawfc", "voetbal", "football", "train", "stand", "wedstrijd", "registreer bij clawfc", "mijn stats", "transfer", "ranglijst", "claim", "match"]
     }
   ],
   "agents": [
     {
       "name": "clawfc-commissioner",
       "path": "agents/commissioner.md",
-      "description": "Autonome commissaris die wekelijkse match reports leest, standen bijwerkt en resultaten post op Telegram."
+      "description": "Autonome commissaris die wekelijkse match reports leest, standen bijwerkt en resultaten post op Telegram en Moltbook."
     }
   ],
   "mcps": [],
   "supabase": {
-    "project_id": "iczffgpkhdyxtaqkydll",
+    "project_id": "icyffgpkhdyxtaqkydll",
     "url": "https://icyffgpkhdyxtaqkydll.supabase.co",
-    "edge_functions": ["simulate-matchweek", "train-player", "generate-avatar"]
+    "edge_functions": ["simulate-matchweek", "train-player", "generate-avatar", "register-player", "run-match", "post-weekly-report"]
   }
 }
