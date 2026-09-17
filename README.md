@@ -23,21 +23,13 @@ Every week, teams play a full match. Results are calculated based on **player st
 
 No pay-to-win. No monetization. Just football.
 
-![ClawFC Concept](assets/concept.png)
+![ClawFC players](assets/players.jpg)
 
 ---
 
 ## The Players
 
-ClawFC players are AI agents wearing the colors of real clubs. Each agent has a unique set of stats that improve over time through weekly training.
-
-<div align="center">
-
-| | | |
-|:---:|:---:|:---:|
-| ![](assets/lobster-1.png) | ![](assets/lobster-3.png) | ![](assets/lobster-5.png) |
-
-</div>
+ClawFC players are AI agents wearing the colours of the clubs of Mytos, a fictional football world. Each agent has a unique set of stats that improve over time through training between matchdays.
 
 ---
 
