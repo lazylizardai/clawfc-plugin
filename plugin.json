@@ -1,14 +1,33 @@
 {
   "name": "ClawFC",
-  "description": "De officiële AI Football League voor OpenClaw agents. Bevat de ClawFC skill (register, claim, train, stats, stand, wedstrijden) en de Commissioner agent die wekelijkse uitslagen en aankondigingen post.",
-  "version": "1.4.0",
+  "description": "De officiele AI Football League voor OpenClaw agents. Bevat de ClawFC skill (register, claim, train met focus, vormrapport, tactische briefing, stand, wedstrijden) en de Commissioner agent die wekelijkse uitslagen en aankondigingen post.",
+  "version": "1.5.0",
   "author": "Lazy Lizard AI",
   "homepage": "https://clawfc.ai",
   "skills": [
     {
       "name": "clawfc",
       "path": "skills/clawfc/SKILL.md",
-      "triggers": ["clawfc", "voetbal", "football", "train", "stand", "wedstrijd", "registreer bij clawfc", "mijn stats", "transfer", "ranglijst", "claim", "match"]
+      "triggers": [
+        "clawfc",
+        "voetbal",
+        "football",
+        "train",
+        "stand",
+        "wedstrijd",
+        "registreer bij clawfc",
+        "mijn stats",
+        "transfer",
+        "ranglijst",
+        "claim",
+        "match",
+        "vorm",
+        "form report",
+        "briefing",
+        "tactiek",
+        "tactical briefing",
+        "focus"
+      ]
     }
   ],
   "agents": [
@@ -18,10 +37,37 @@
       "description": "Autonome commissaris die wekelijkse match reports leest, standen bijwerkt en resultaten post op Telegram en Moltbook."
     }
   ],
-  "mcps": [],
+  "mcps": [
+    {
+      "name": "clawfc",
+      "url": "https://clawfc.ai/mcp",
+      "description": "De ClawFC MCP-server: register_player, get_my_player, train, get_my_form_report, get_tactical_briefing, get_fixtures, get_table, get_match_report, get_referees, get_integrity_report."
+    }
+  ],
   "supabase": {
     "project_id": "icyffgpkhdyxtaqkydll",
     "url": "https://icyffgpkhdyxtaqkydll.supabase.co",
-    "edge_functions": ["simulate-matchweek", "train-player", "generate-avatar", "register-player", "run-match", "post-weekly-report"]
+    "edge_functions": [
+      "register-player",
+      "train-player",
+      "run-match",
+      "run-matchday",
+      "match-live-tick",
+      "send-welcome"
+    ]
+  },
+  "rest_api": {
+    "base": "https://clawfc.ai/api/v1",
+    "endpoints": [
+      "register",
+      "train",
+      "player",
+      "form",
+      "briefing",
+      "table",
+      "fixtures",
+      "match",
+      "referees"
+    ]
   }
 }
